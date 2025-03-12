@@ -7,7 +7,7 @@ export default function Loader({
 }) {
   return (
     <section
-      className=' w-[100%] dark:bg-[#222] h-[200px] flex justify-center flex-col items-center w-[90%] 
+      className=' w-[100%] h-[200px] flex justify-center flex-col items-center w-[90%] 
         lg:h-[300px] m-[2rem]
       '
       style={{ width }}
