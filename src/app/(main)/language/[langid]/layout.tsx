@@ -1,4 +1,4 @@
-import { getLanguage } from '@/app/components/actions/languages';
+import { getLanguage } from '@/app/actions/languages';
 import Loader from '@/app/components/Loader/Loader';
 import Navbar from '@/app/components/Navbar/Navbar';
 import TopicsTab from '@/app/components/TopicsTab/TopicsTab';

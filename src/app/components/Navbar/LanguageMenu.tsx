@@ -63,7 +63,7 @@ export default function LanguageMenu({
         className={`
           h-[47px] px-4 w-[150px] text-[1.5rem] bg-[#CFCFCF] hover:bg-[#DADADA] z-[1]
           lg:hidden
-          dark:bg-[#181818] dark:hover:bg-[#333]
+          dark:bg-[#181818] dark:hover:bg-[#333] cursor-pointer
         `}
       >
         {languageName ? languageName : `Select`} {mobileDropdown ? <>▲</> : <>▼</>}
@@ -104,7 +104,7 @@ export default function LanguageMenu({
               icon={faClose}
               tabIndex={-1}
               className={`
-                text-[2rem] font-[700]
+                text-[2rem] font-[700] cursor-pointer
               `}
             />
           </button>

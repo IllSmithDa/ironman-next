@@ -24,8 +24,8 @@ export default function Home() {
           <h1 className="lg:text-[6.5rem] lg:m-[5rem] md:text-[4rem] sm:text-[3rem] text-[2.2rem] font-[700] mt-[5rem] mb-[2.5rem] dark:text-white text-black">
             IronCodeMan
           </h1>
-          <h2 className="fadeInLeft">A Reference for Programmers</h2>
-          <h4 className="fadeInLeft">Select topic or language</h4>
+          <h1 className="fadeInLeft sm:text-[2rem]">A Reference for Programmers</h1>
+          <h1 className="fadeInLeft sm:text-[1.5rem]">Select topic or language</h1>
         </section>
       </section>
     </main>

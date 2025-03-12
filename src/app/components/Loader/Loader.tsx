@@ -7,8 +7,8 @@ export default function Loader({
 }) {
   return (
     <section
-      className=' w-[100%] h-[200px] flex justify-center flex-col items-center w-[90%] 
-        lg:h-[300px] m-[2rem]
+      className=' w-[100%] h-[300px] flex justify-center flex-col items-center
+        lg:h-[400px]
       '
       style={{ width }}
       data-testid="loader"

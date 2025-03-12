@@ -1,6 +1,6 @@
 "use server";
 
-import { ConceptItem, ConceptTopic } from "../../types";
+import { ConceptItem, ConceptTopic } from "../types";
 
 export async function getAllConceptTopics(): Promise<ConceptTopic[]> {
   try {

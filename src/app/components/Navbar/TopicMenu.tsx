@@ -105,6 +105,7 @@ export default function TopicMenu({
           tabIndex={-1}
           className={`
             text-[24px]
+            cursor-pointer
           `}
         />
       </button>
@@ -137,16 +138,16 @@ export default function TopicMenu({
                   icon={faHome}
                   tabIndex={-1}
                   className={`
-                    text-[26px] block
+                    text-[26px] block cursor-pointer
                   `}  
                 />
               </Link>
               <Link
-                className='home-nav-btn'
+                className='home-nav-btn h-[47px] flex flex-col justify-center align-center cursor-pointer'
                 onClick={() => setNavOpen(false)}
                 href='/'
               >
-                <h3 className={`text-[2rem]`}>Home</h3>
+                <h3 className={`text-[2rem] cursor-pointer`}>Home</h3>
               </Link>
             </div>
             <button
@@ -161,7 +162,7 @@ export default function TopicMenu({
                 icon={faClose}
                 tabIndex={-1}
                 className={`
-                  text-[2rem] font-[700]
+                  text-[2rem] font-[700] cursor-pointer
                 `}
               />
             </button>

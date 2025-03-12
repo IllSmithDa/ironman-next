@@ -1,6 +1,6 @@
 "use server";
 
-import { Language } from "../../types";
+import { Language } from "../types";
 
 export async function getAllLanguages(): Promise<Language[]> {
   try {

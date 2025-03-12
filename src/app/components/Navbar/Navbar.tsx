@@ -7,7 +7,7 @@ import { ConceptTopic } from '../../types';
 import Link from 'next/link';
 import iron from '/images/iron.svg';
 
-import { getAllConceptTopics } from '../actions/concepts';
+import { getAllConceptTopics } from '../../actions/concepts';
 import Image from 'next/image';
 import LanguageContainer from './LanguageContainer';
 

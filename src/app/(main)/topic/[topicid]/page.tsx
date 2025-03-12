@@ -1,8 +1,8 @@
-import { getTopic } from '@/app/components/actions/topics';
+import { getTopic } from '@/app/actions/topics';
 import React from 'react'
 import ClientView from './ClientView';
-import { fetchConceptByTopicId } from '@/app/components/actions/concepts';
-import { getAllLanguages } from '@/app/components/actions/languages';
+import { fetchConceptByTopicId } from '@/app/actions/concepts';
+import { getAllLanguages } from '@/app/actions/languages';
 type Params = Promise<{ topicid: string }>
 
 // https://stackoverflow.com/questions/79113322/nextjs-react-type-does-not-satisfy-constraint

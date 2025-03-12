@@ -1,7 +1,7 @@
 
 import { ConceptTopic } from '../../types';
 import Link from 'next/link';
-import { getAllConceptTopics } from '../actions/concepts';
+import { getAllConceptTopics } from '../../actions/concepts';
 // import UseConceptTopics from '../../hooks/ConceptTopicsHooks';
 
 export default async function TopicsTab({

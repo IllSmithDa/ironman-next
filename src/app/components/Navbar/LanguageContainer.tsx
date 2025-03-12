@@ -1,5 +1,5 @@
 import React from 'react'
-import { getAllLanguages } from '../actions/languages';
+import { getAllLanguages } from '../../actions/languages';
 import { Language } from '@/app/types';
 import LanguageMenu from './LanguageMenu';
 

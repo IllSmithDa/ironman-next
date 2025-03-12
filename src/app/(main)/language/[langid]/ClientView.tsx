@@ -100,7 +100,7 @@ export default function ClientView({
     ))
 
   return (
-    <>  
+    <> 
       <h3 className='mt-[2rem]'>Concepts for {languageData?.name}</h3>
       <p className='fadeInLeft my-[2rem]'>
         {languageData?.description}

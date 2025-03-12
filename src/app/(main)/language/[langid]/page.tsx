@@ -1,8 +1,8 @@
 import React from 'react'
 import type { Metadata } from "next";
 import { ConceptItem, Language } from '@/app/types';
-import { getLanguage } from '@/app/components/actions/languages';
-import { fetchConceptsByLanguage } from '@/app/components/actions/concepts';
+import { getLanguage } from '@/app/actions/languages';
+import { fetchConceptsByLanguage } from '@/app/actions/concepts';
 import ClientView from './ClientView';
 type Params = Promise<{ langid: string }>
 
