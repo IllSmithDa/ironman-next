@@ -1,16 +1,13 @@
 import { getTopic } from '@/app/components/actions/topics';
-import { Metadata } from 'next';
 import React from 'react'
 import ClientView from './ClientView';
 import { fetchConceptByTopicId } from '@/app/components/actions/concepts';
 import { getAllLanguages } from '@/app/components/actions/languages';
+type Params = Promise<{ topicid: string }>
 
-export async function generateMetadata({
-  params = { topicid: "" },
-}: {
-  params: { topicid?: string };
-}): Promise<Metadata> {
-  const topicId = params.topicid || "";
+export async function generateMetadata(props: { params: Params }) {
+  const params = await props.params;
+  const topicId = params.topicid;
   const topicData = await getTopic(topicId);
 
   return {

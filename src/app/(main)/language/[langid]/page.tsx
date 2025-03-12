@@ -4,13 +4,12 @@ import { ConceptItem, Language } from '@/app/types';
 import { getLanguage } from '@/app/components/actions/languages';
 import { fetchConceptsByLanguage } from '@/app/components/actions/concepts';
 import ClientView from './ClientView';
+type Params = Promise<{ langid: string }>
 
-export async function generateMetadata({
-  params = { langid: "" },
-}: {
-  params?: { langid?: string };
-}): Promise<Metadata> {
-  const languageId = params.langid || "";
+
+export async function generateMetadata(props: { params: Params }): Promise<Metadata> {
+  const params = await props.params;
+  const languageId = params.langid;
   const languageData = await getLanguage(languageId);
 
   return {
