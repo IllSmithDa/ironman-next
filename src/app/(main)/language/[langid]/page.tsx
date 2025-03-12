@@ -10,7 +10,7 @@ export async function generateMetadata({
 }: {
   params: { langid?: string };
 }): Promise<Metadata> {
-  const languageId = (await params).langid;
+  const languageId = params.langid;
   const languageData = await getLanguage(languageId ?? '');
 
   return {

@@ -11,7 +11,7 @@ export async function generateMetadata({
 }: {
   params: { topicid?: string };
 }): Promise<Metadata> {
-  const topicId = (await params).topicid;
+  const topicId = params.topicid;
   const topicData = await getTopic(topicId ?? '');
 
 
