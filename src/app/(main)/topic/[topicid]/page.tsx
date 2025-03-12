@@ -5,15 +5,13 @@ import ClientView from './ClientView';
 import { fetchConceptByTopicId } from '@/app/components/actions/concepts';
 import { getAllLanguages } from '@/app/components/actions/languages';
 
-
 export async function generateMetadata({
-  params,
+  params = { topicid: "" },
 }: {
   params: { topicid?: string };
 }): Promise<Metadata> {
-  const topicId = params.topicid;
-  const topicData = await getTopic(topicId ?? '');
-
+  const topicId = params.topicid || "";
+  const topicData = await getTopic(topicId);
 
   return {
     title: `IronCodeMan | ${topicData?.name || "Home"}`,

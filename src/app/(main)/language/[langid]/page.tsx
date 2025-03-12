@@ -6,12 +6,12 @@ import { fetchConceptsByLanguage } from '@/app/components/actions/concepts';
 import ClientView from './ClientView';
 
 export async function generateMetadata({
-  params,
+  params = { langid: "" },
 }: {
-  params: { langid?: string };
+  params?: { langid?: string };
 }): Promise<Metadata> {
-  const languageId = params.langid;
-  const languageData = await getLanguage(languageId ?? '');
+  const languageId = params.langid || "";
+  const languageData = await getLanguage(languageId);
 
   return {
     title: `IronCodeMan | ${languageData?.name || "Home"}`,
