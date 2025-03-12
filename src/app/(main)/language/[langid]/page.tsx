@@ -6,7 +6,7 @@ import { fetchConceptsByLanguage } from '@/app/components/actions/concepts';
 import ClientView from './ClientView';
 type Params = Promise<{ langid: string }>
 
-
+// https://stackoverflow.com/questions/79113322/nextjs-react-type-does-not-satisfy-constraint
 export async function generateMetadata(props: { params: Params }): Promise<Metadata> {
   const params = await props.params;
   const languageId = params.langid;
