@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /private
+Allow: /
+
+Sitemap: https://ironcodeman.com/sitemap.xml

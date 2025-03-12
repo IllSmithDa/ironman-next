@@ -15,7 +15,7 @@ export default async function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body role="test">
         {children}
       </body>
     </html>

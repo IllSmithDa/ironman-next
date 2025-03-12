@@ -21,7 +21,7 @@ export default function Home() {
             className="w-max-[400px] max-h-[400px] xl:w-[30%] lg:w-[35%] w-[40%] fadeInLeft"
           />
 
-          <h1 className="lg:text-[6.5rem] lg:m-[5rem] md:text-[4rem] sm:text-[3rem] text-[2.2rem] font-[700] mt-[5rem] mb-[2.5rem] dark:text-white text-black">
+          <h1 className="lg:text-[6.5rem] lg:m-[5rem] md:text-[4rem] sm:text-[3rem] text-[2.2rem] font-[700] mt-[5rem] mb-[2.5rem] dark:text-white text-black" data-testid="home-title">
             IronCodeMan
           </h1>
           <h1 className="fadeInLeft sm:text-[2rem]">A Reference for Programmers</h1>
