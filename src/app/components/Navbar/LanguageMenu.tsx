@@ -29,6 +29,7 @@ export default function LanguageMenu({
     <li key={entry.id}>
       <Link 
         href={`/language/${entry.id}`}
+        prefetch={false}
         className={`
           relative z-[150] block text-[1.6rem] p-[1.5rem] bg-[#D1D1D1] border-b-[1px] border-[#AAA] 
           dark:bg-[#181818] dark:hover:bg-[#393939] dark:border-[#555]

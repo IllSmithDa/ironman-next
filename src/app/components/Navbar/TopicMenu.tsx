@@ -61,6 +61,7 @@ export default function TopicMenu({
                     setNavOpen(false);
                   
                   }}
+                  prefetch={false}
                   href={`/topic/${topic.id}`}
                   className={`
                   inline-block w-[100%] relative z-[100] text-[1.5rem] p-[1.5rem] bg-[#F7F7F7] border-b-[1px] border-[#AAA]
@@ -72,6 +73,7 @@ export default function TopicMenu({
                 <Link
                   id={`${topic.id}_nav`}
                   key={topic.id}
+                  prefetch={false}
                   onClick={() =>  {
                     setNavOpen(false);
                   }}
