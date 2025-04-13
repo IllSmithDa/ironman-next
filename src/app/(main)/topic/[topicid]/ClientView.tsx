@@ -56,23 +56,19 @@ export default function ClientView({ concepts, languages }: {
         data.checked ? 
         <article
           className={`
-            dark:bg-[#272727] bg-[#F7F7F7]
+            dark:bg-[#272727]
             fadeInLeft
-            rounded-xl shadow-md
             box-border
-            p-6
-            w-full
-            h-full
-            transition-all duration-300 ease-in-out
-            hover:shadow-lg hover:bg-[#f0f0f0] dark:hover:bg-[#333]
-            min-h-[200px]
+            inline-block
+            p-[1.5rem]
+            mb-[1rem]
+            w-[100%]
             `
           }
         >
           <h4>{data.language}</h4>
           <pre
             id={`${data.id}_code`}
-            className="overflow-auto whitespace-pre-wrap text-sm"
           >
             {data.text}
           </pre>
@@ -90,17 +86,16 @@ export default function ClientView({ concepts, languages }: {
         </Suspense>
       </section>
       <h4 className={`
-        mt-8 text-xl font-bold
+        mt-[2rem]
       `}>
         Examples
       </h4>
       {conceptsAndLanguages?.length ?
         <section
           key="language-listing"
-          className={`
-            grid grid-cols-1 md:grid-cols-2 gap-4 mt-4
-            auto-rows-[1fr]
-          `}
+          className={
+            `columns-[350px]`
+          }
         >
           {renderData}
         </section>:
