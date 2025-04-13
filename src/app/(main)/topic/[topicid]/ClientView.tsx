@@ -62,7 +62,12 @@ export default function ClientView({ concepts, languages }: {
             inline-block
             p-[1.5rem]
             mb-[1rem]
-            w-[100%]
+            fadeInLeft
+            rounded-xl shadow-md
+            w-full
+            transition-all duration-300 ease-in-out
+            hover:shadow-lg hover:bg-[#f0f0f0] dark:hover:bg-[#333]
+            break-words
             `
           }
         >
