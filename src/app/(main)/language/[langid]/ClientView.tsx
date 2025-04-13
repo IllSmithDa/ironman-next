@@ -2,7 +2,7 @@
 import Loader from '@/app/components/Loader/Loader';
 import { parseConcepts } from '@/app/helper/parseData';
 import { ConceptItem, Language } from '@/app/types';
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, memo } from 'react'
 
 const topicList = [
   {
@@ -29,7 +29,7 @@ const topicList = [
 
 
 
-export default function ClientView({
+const ClientView = memo(function ClientView({
   languageData,
   concepts
 }: {
@@ -63,13 +63,14 @@ export default function ClientView({
           concepts?.filter(topic => topic.category === category || category === 'all').map((data) => (
             <li
               className={`
-                dark:bg-[#272727]
+                dark:bg-[#272727] bg-[#F7F7F7]
                 fadeInLeft
+                rounded-xl shadow-md
                 box-border
-                inline-block
-                p-[1.5rem]
-                mb-[1rem]
-                w-[100%]
+                p-6
+                w-full
+                transition-all duration-300 ease-in-out
+                hover:shadow-lg hover:bg-[#f0f0f0] dark:hover:bg-[#333]
               `}
               key={data.id}
             >
@@ -138,9 +139,9 @@ export default function ClientView({
       }
       {concepts?.length ? 
         <ul className={`
-            columns-[350px]
-            mt-[2rem]
-          `}>
+          grid grid-cols-1 md:grid-cols-2 gap-4
+          mt-8
+        `}>
           {renderData()}
         </ul>:
         <Loader />
@@ -160,4 +161,6 @@ export default function ClientView({
       }
     </>
   )
-}
+})
+
+export default ClientView;
